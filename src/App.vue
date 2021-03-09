@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <ul class="flex-1 flex justify-evenly items-center">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/dogs">Dogs</router-link></li>
+        <li><router-link to="/search">Search</router-link></li>
+        <li><router-link to="/my-favourites">Favourites</router-link></li>
+      </ul>
     </div>
     <router-view />
   </div>
@@ -10,7 +14,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -18,15 +22,12 @@
 }
 
 #nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  padding: 10px;
+  background: var(--color-primary);
+  color: var(--color-tertiary);
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #fff;
 }
 </style>

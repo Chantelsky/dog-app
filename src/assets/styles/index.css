@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+  --color-primary: #373737;
+  --color-secondary: #0E5D7E;
+  --color-tertiary: #FFBD43;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
